@@ -1,0 +1,35 @@
+@import url(../../App.css);
+
+.box {
+    margin-top: 50px;
+    background: var(--background-color2);
+    width: 890px;
+    padding: 2rem 3rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.box__location {
+    font-size: 32px;
+}
+
+.box__items-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box__item {
+    list-style: none;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.box__label {
+    font-weight: 500;
+}
