@@ -26,7 +26,8 @@ body {
   display: flex;
   background: var(--background-color);
   justify-content: center;
-  color: var(--text-primary-color);  
+  color: var(--text-primary-color);
+  cursor: url(./assets/images/cursor.png), auto;  
 }
 
 .App {
