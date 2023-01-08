@@ -1,0 +1,101 @@
+@import url(../../App.css);
+
+.card {
+    width: 437px;
+    height: 696px;
+    background: var(--background-color2);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.56);
+}
+
+.card:hover .card__image {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.card__header {
+    width: 100%;
+    background: skyblue;
+    aspect-ratio: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: 0.3s;
+}
+
+.card__status-container {
+    position: absolute;
+    width: 180px;
+    height: 42px;
+    background: var(--background-color2);
+    border-radius: 0px 12px 12px 0px;
+    top: 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 12px;
+}
+
+.card__status-circle {
+    width: 19px;
+    height: 19px;
+    background: var(--unknown-color);
+    border-radius: 50%;
+}
+
+.Alive {
+    background: var(--alive-color);
+}
+
+.Dead {
+    background: var(--dead-color);
+}
+
+.card__status-text {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card__body {
+    padding: 24px;
+}
+
+.card__resident-name {
+    font-size: 32px;
+    font-weight: 400;
+    border-bottom: 2px solid var(--background-color);
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    
+}
+
+.card__info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card__item {
+    list-style: none;
+}
+
+.card__info-label {
+    text-transform: uppercase;
+    color: var(--label-color);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.card__info {
+    font-weight: 700px;
+    font-size: 24px;
+    line-height: 20px;
+}
+

@@ -1,3 +1,92 @@
-input, button {
-  font-size: 1.2rem;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/*font-family: 'Roboto', sans-serif;*/
+
+:root {
+  --background-color: #05292e;
+  --text-primary-color: #fff;
+  --background-color2: #062226;
+  --yellow-green: #c8dc5c;
+  --blue-rick: #02b1c8;
+  --dead-color: #FF0000;
+  --alive-color: #04ff00;
+  --unknown-color: #938686;
+  --label-color: #7E7E7E;
+
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  background: var(--background-color);
+  justify-content: center;
+  color: var(--text-primary-color);  
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__img {
+  box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.5);
+}
+
+.search-form {
+  background: var(--background-color2);
+  display: flex;
+  width: 50%;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin-top: -60px;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+}
+
+input {
+  height: 50px;
+  width: 65%;
+  font-family: inherit;
+  font-size: 1.3rem;
+  border: none;
+  padding: 0 20px;
+}
+
+button {
+  width: 140px;
+  height: 50px;
+  font-family: inherit;
+  font-size: 1.3rem;
+  background: var(--blue-rick);
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: var(--background-color2);
+  background: var(--yellow-green)
+}
+
+.residents-container {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  margin: 50px auto 150px auto;
+}
+
+
+

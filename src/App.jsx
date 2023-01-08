@@ -4,6 +4,7 @@ import LocationInfo from './components/LocationInfo'
 import './App.css'
 import ResidentInfo from './components/ResidentInfo'
 import ErrorFetch from './components/ErrorFetch'
+import bg from './assets/images/bg2.png'
 
 
 function App() {
@@ -40,8 +41,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Rick and Morty</h1>
-      <form onSubmit={handleSubmit}>
+      <div className='header'>
+        <img className='header__img' src={bg} alt="Rick and Morty" />
+      </div>
+      <form className='search-form' onSubmit={handleSubmit}>
         <input id='inputSearch' type="text" />
         <button>Search</button>
       </form>
